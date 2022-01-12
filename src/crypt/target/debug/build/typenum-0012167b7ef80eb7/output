@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/jibun/nikki-crypt/src/crypt/target/debug/build/typenum-0012167b7ef80eb7/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/jibun/nikki-crypt/src/crypt/target/debug/build/typenum-0012167b7ef80eb7/out/op.rs
