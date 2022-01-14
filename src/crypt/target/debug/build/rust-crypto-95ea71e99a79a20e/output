@@ -8,7 +8,7 @@ CFLAGS_x86_64_unknown_linux_gnu = None
 HOST_CFLAGS = None
 CFLAGS = None
 DEBUG = Some("true")
-running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-m64" "-Wall" "-Wextra" "-o" "/home/jibun/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/util_helpers.o" "-c" "src/util_helpers.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-m64" "-Wall" "-Wextra" "-o" "/Big/CSdev/rust/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/util_helpers.o" "-c" "src/util_helpers.c"
 exit status: 0
 TARGET = Some("x86_64-unknown-linux-gnu")
 OPT_LEVEL = Some("0")
@@ -20,7 +20,7 @@ CFLAGS_x86_64_unknown_linux_gnu = None
 HOST_CFLAGS = None
 CFLAGS = None
 DEBUG = Some("true")
-running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-m64" "-Wall" "-Wextra" "-o" "/home/jibun/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/aesni_helpers.o" "-c" "src/aesni_helpers.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-m64" "-Wall" "-Wextra" "-o" "/Big/CSdev/rust/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/aesni_helpers.o" "-c" "src/aesni_helpers.c"
 exit status: 0
 TARGET = Some("x86_64-unknown-linux-gnu")
 TARGET = Some("x86_64-unknown-linux-gnu")
@@ -31,8 +31,8 @@ HOST_AR = None
 AR = None
 TARGET = Some("x86_64-unknown-linux-gnu")
 TARGET = Some("x86_64-unknown-linux-gnu")
-running: "ar" "crs" "/home/jibun/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/lib_rust_crypto_helpers.a" "/home/jibun/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/util_helpers.o" "/home/jibun/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/aesni_helpers.o"
+running: "ar" "crs" "/Big/CSdev/rust/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/lib_rust_crypto_helpers.a" "/Big/CSdev/rust/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/util_helpers.o" "/Big/CSdev/rust/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out/src/aesni_helpers.o"
 exit status: 0
 TARGET = Some("x86_64-unknown-linux-gnu")
 cargo:rustc-link-lib=static=_rust_crypto_helpers
-cargo:rustc-link-search=native=/home/jibun/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out
+cargo:rustc-link-search=native=/Big/CSdev/rust/nikki-crypt/src/crypt/target/debug/build/rust-crypto-95ea71e99a79a20e/out

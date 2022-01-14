@@ -10,4 +10,6 @@ aes = "^0.7.5"
 aes-gcm = "0.9.4"
 block-modes = "0.8.1"
 hex-literal = "0.3.1"
-
+argon2 = "0.3"
+rand_core = { version = "0.6", features = ["std"] }
+sodiumoxide = "0.2.5"
