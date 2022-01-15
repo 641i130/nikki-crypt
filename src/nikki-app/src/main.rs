@@ -13,7 +13,7 @@ use std::{
 
 // Variables in app
 struct NikkiApp {
-    central_panel: u8,
+    active_window: u8,
     key: String,
     unlocked: bool,
     title: String,
@@ -24,7 +24,7 @@ struct NikkiApp {
 impl NikkiApp {
     fn new() -> NikkiApp {
         NikkiApp {
-            central_panel: 0,
+            active_window: 0,
             key: "".to_string(),
             unlocked: false,
             title: "".to_string(),
@@ -46,14 +46,14 @@ impl App for NikkiApp {
                 menu::bar(ui, |ui| {
                     ui.with_layout(Layout::left_to_right(), |ui| {
                         if ui.button("File").clicked() {
-                            self.central_panel = 1;
+                            self.active_window = 1;
                         }
                         if ui.button("Settings").clicked() {
-                            self.central_panel = 2;
+                            self.active_window = 2;
                         }
                         if ui.button("Lock").clicked() {
                             self.unlocked = false;
-                            self.central_panel = 0;
+                            self.active_window = 0;
                         }
                         if ui.button("Quit").clicked() {
                             frame.quit();
@@ -63,7 +63,7 @@ impl App for NikkiApp {
             });
         }
 
-        match self.central_panel {
+        match self.active_window {
             // Login window
             0 => {
                 CentralPanel::default().show(ctx, |ui| {
@@ -79,7 +79,7 @@ impl App for NikkiApp {
                             // TODO: PLEASE MAKE SOMETHING SAFER THAN THIS 
                             if self.key == "1234" {
                                 self.unlocked = true;
-                                self.central_panel = 1;
+                                self.active_window = 1;
                                 self.key = "".to_string();
                             } else {
                                 self.key = "".to_string();
